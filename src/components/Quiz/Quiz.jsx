@@ -63,9 +63,9 @@ const Quiz = () => {
     <div className="container">
       <h1>Quiz-App</h1>
       <hr />
-      {result ? 
+      {result ? (
         <></>
-       : 
+      ) : (
         <>
           <h2>
             {index + 1}. {question.question}
@@ -109,17 +109,17 @@ const Quiz = () => {
             {index + 1} of {data.length} questions
           </div>
         </>
-      }
-      {result ? 
+      )}
+      {result ? (
         <>
           <h2>
             You Scored {score} out of {data.length}
           </h2>
           <button onClick={reset}>Reset</button>
         </>
-       : 
+      ) : (
         <></>
-      }
+      )}
     </div>
   );
 };
